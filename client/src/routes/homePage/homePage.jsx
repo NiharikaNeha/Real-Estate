@@ -4,9 +4,9 @@ import SearchBar from "../../components/searchBar/SearchBar";
 import "./homePage.scss";
 
 function HomePage() {
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
-  console.log(currentUser)
+  console.log(currentUser);
 
   return (
     <div className="homePage">
