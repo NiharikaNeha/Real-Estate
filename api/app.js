@@ -5,6 +5,8 @@ import postRoute from "./Routes/postRoutes.js";
 import authRoute from "./Routes/authRoutes.js";
 import testRoute from "./Routes/testRoutes.js";
 import userRoute from "./Routes/userRoutes.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 
