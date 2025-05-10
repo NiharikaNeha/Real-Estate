@@ -130,7 +130,7 @@ export const profilePosts = async (req, res) => {
     res.status(200).json({ userPosts, savedPosts });
   } catch (err) {
     console.log(err);
-    res.status(500).json({ message: "Failed to get profile posts!" });
+    res.status(500).json({ message: "Failed To Get Profile Posts!" });
   }
 };
 
@@ -154,4 +154,4 @@ export const getNotificationNumber = async (req, res) => {
     console.log(err);
     res.status(500).json({ message: "Failed to get profile posts!" });
   }
-};
+}; 
