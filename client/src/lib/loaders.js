@@ -1,5 +1,5 @@
 import { defer } from "react-router-dom";
-import apiRequest from "./apiRequest";
+import apiRequest from "./apiRequest.js";
 
 export const singlePageLoader = async ({ request, params }) => {
   const res = await apiRequest("/posts/" + params.id);
@@ -15,7 +15,7 @@ export const listPageLoader = async ({ request, params }) => {
 
 export const profilePageLoader = async () => {
   const postPromise = apiRequest("/users/profilePosts");
-  const chatPromise = apiRequest("/chats");
+  const chatPromise = apiRequest("/Chats");
   return defer({
     postResponse: postPromise,
     chatResponse: chatPromise,
